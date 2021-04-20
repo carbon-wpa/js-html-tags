@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        legend {
-            background-color: black;
-            color: white;
-        }
-        fieldset {
-            background-color: cornsilk;
-        }
-    </style>
 </head>
 <body>
 <form>
     <fieldset>
         <legend>Grouped inputs</legend>
         <label>some input</label>
-        <input type="text" />
+        <input list="select-city" type="text" />
+        <datalist id="select-city">
+            <option value="Wrocław"></option>
+            <option value="Kraków"></option>
+            <option value="Warszawa"></option>
+            <option value="Wałbrzych"></option>
+            <option value="Sosnowiec"></option>
+        </datalist>
     </fieldset>
 </form>
 </body>
