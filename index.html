@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        function getColor() {
+          alert(document.getElementById('color').value)
+        }
+    </script>
 </head>
 <body>
 <form>
     <fieldset>
         <legend>Grouped inputs</legend>
         <label>some input</label>
-        <input list="select-city" type="text" />
-        <datalist id="select-city">
-            <option value="Wrocław"></option>
-            <option value="Kraków"></option>
-            <option value="Warszawa"></option>
-            <option value="Wałbrzych"></option>
-            <option value="Sosnowiec"></option>
-        </datalist>
+        <input type="color" id="color" />
+        <button onclick="getColor()">Get color</button>
     </fieldset>
+    <fieldset>
+        <legend>Grouped inputs 2</legend>
+        <label>some date input</label>
+        <input type="date"/>
+        <label>some time input</label>
+        <input type="time"/>
+    </fieldset>
+    <div>
+        <progress value="50" max="100"></progress>
+    </div>
 </form>
 </body>
 </html>
